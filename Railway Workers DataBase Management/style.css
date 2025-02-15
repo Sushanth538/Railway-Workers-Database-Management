@@ -1,0 +1,26 @@
+*{
+    font-style: italic;
+}
+#newuser{
+    font-style: italic;
+    text-decoration: none;
+}
+
+.back{
+color: white;
+font-size: large;
+font-family: cursive;
+font-weight: bold;
+border-radius: 12px;
+}
+.forgot{
+
+    background: url("abc.jpg");
+    
+}
+.ba{
+    background-color: rgb(167, 129, 202);
+}
+#size{
+    padding-right: 33px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAILWAY LOGIN PAGE</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/uploads/1413387158190559d80f7/6108b580?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+            opacity: 1;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgb(113 101 101 / 80%);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        header {
+            float: left;
+            margin-bottom: 489px;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 66px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .container {
+            float: left;
+            margin-top: 20vh;
+            margin-right: 853px;
+            position: absolute;
+            background-attachment: #c5b5b5;
+            color: white;
+        }
+
+        #h {
+            margin-left: 79px;
+        }
+
+        .additional-options {
+            color: white;
+        }
+
+        .additional-options a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="h">INDIAN RAILWAYS</h1>
+        <P class="para">"Welcome! Please join us on our journey by logging in to our railway portal. <br> Your ticket to seamless travel experiences  awaits.See you on the tracks!"</P><br><br>
+    </header>
+    <div class="container">
+        <form id="loginForm" action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="additional-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <a href="forgot_password.php">Forgot Password</a>
+                <p>New member?</p><a href="newuser.html">New User</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
